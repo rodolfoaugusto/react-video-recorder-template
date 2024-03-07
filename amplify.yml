@@ -1,0 +1,14 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - yarn
+    build:
+      commands:
+        - yarn run build
+  artifacts:
+    files:
+      - '**/*'
+    baseDirectory: /build
+  cache: null
